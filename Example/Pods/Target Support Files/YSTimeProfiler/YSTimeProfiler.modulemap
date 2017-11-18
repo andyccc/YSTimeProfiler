@@ -1,0 +1,6 @@
+framework module YSTimeProfiler {
+  umbrella header "YSTimeProfiler-umbrella.h"
+
+  export *
+  module * { export * }
+}

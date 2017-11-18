@@ -1,0 +1,13 @@
+#use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YSTimeProfiler_Example' do
+  pod 'YSTimeProfiler', :path => '../'
+
+  target 'YSTimeProfiler_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

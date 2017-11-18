@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069E8B5777FFCB6BB8DBCBA6D383DA0F /* YSCallTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 21ED4A84EE59FF8FF82808EE0EA42DA3 /* YSCallTrace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1165AE73B9464A752AB0916599CFCB8A /* YSCallTrace.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3F60586C30536167DA7F29062DCCE7 /* YSCallTrace.c */; };
+		14B190CBFF8AAFDA9B7F7BCDD7FE672F /* YSRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C955F2F71D0B54473378999B3C8BF /* YSRecordCell.m */; };
+		21C73CD56DF2F001AA7ACE1A0931C69F /* YSNOExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C33214A4CA34F0C0FABEC91F1742EA02 /* YSNOExpandIcon.png */; };
+		2E1C830943360D40B6362188CF2A437E /* TimeProfilerVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6C6869EE21298F0A070D966F5E598D /* TimeProfilerVC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A3E07F66CF82FA8CFE412BD03FAF17A /* YSRecordCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DA07B72B7C55B01FA251129ADE3039AE /* YSRecordCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C2D126ABDAF9AED4457FF96E17CE94B /* YSRecordModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1C081FF2AD9E60350B1512450241C9 /* YSRecordModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EAC52A66BAA2B733B798D1C41EB28DF /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9622DFCAA11CDDC330ED18D9E13DF9EF /* fishhook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73E9D2721D4F7A98D297CC41C2149508 /* UIWindow+CallRecordShake.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FD7A26A0559F5B78EE71F080696015 /* UIWindow+CallRecordShake.m */; };
+		74F009852162BAD6EFF4E831A7814282 /* Pods-YSTimeProfiler_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E9EB0D9554D25BAACA1A898FD60E1C /* Pods-YSTimeProfiler_Example-dummy.m */; };
+		79A2EB19D8200ADF88E397D85B528614 /* YSExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C158B05D9F67F3F89E99BBABCDB8A8 /* YSExpandIcon.png */; };
+		7C322CA3B55B581E3901C3755221895C /* YSRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3960D7784C7E52086C3E25D50D0BAD /* YSRecordModel.m */; };
+		8A9B2A1CFA8B0F9353381132CB114F15 /* YSRecordHierarchyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E36AE89CB65E6CF5316F365D32E1919 /* YSRecordHierarchyModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3C287D7C0148E2FE8B83947807DDDD0 /* fishhook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 471645E65D71B9B2486408CA95E8DF09 /* fishhook-dummy.m */; };
+		B3DED084DFA209F143B9EB86AD1B3CC3 /* YSRecordHierarchyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5D00D33AD10E19275523D182728BF /* YSRecordHierarchyModel.m */; };
+		C0EE23AAB5838E3FBF0B51942DBA4FA8 /* TimeProfilerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DED493722350A2CA42AE112D0A2F9 /* TimeProfilerVC.m */; };
+		C87B3271ECD7247387052F568529F880 /* Pods-YSTimeProfiler_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ADF17E90AE2BF483846C5F41F058B3 /* Pods-YSTimeProfiler_Tests-dummy.m */; };
+		EB702513D0D64FFF7C519CB316D37D5D /* YSTimeProfiler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19854EBE8F09C590EF4DD16803CA1594 /* YSTimeProfiler-dummy.m */; };
+		F210D64072CFBEAF0DF9A2981741849F /* UIWindow+CallRecordShake.h in Headers */ = {isa = PBXBuildFile; fileRef = 358B119D840223389CB540BB6EA339A0 /* UIWindow+CallRecordShake.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7933E1B5FF6381612A17A510CF29966 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = A026BC95A40CBFEF2084D0289C46F571 /* fishhook.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1429329A01A16974F664453783E70654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
+			remoteInfo = fishhook;
+		};
+		44362E522DFD2D9E949FFF82F04E5D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
+			remoteInfo = fishhook;
+		};
+		9566FAA81D35052F24877D9BCBBF1540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F80D32F26E568F7355AC8FBE1FB07F;
+			remoteInfo = "YSTimeProfiler-YSTimeProfiler";
+		};
+		A2D585185DDB154EB24DCA11067A57B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC05FB459892C5B214D7FC8E892BEEB;
+			remoteInfo = "Pods-YSTimeProfiler_Example";
+		};
+		AF1519D9598D21B20FBE357363AE4F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42E2DF50D43FD042C8D0CE4FEDBF55F3;
+			remoteInfo = YSTimeProfiler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099EE5F95D40C831EDDB07A5D2EEED51 /* YSTimeProfiler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSTimeProfiler-prefix.pch"; sourceTree = "<group>"; };
+		09CAECAA943FD4A206AEE0E0C157F245 /* libPods-YSTimeProfiler_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YSTimeProfiler_Tests.a"; path = "libPods-YSTimeProfiler_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6C6869EE21298F0A070D966F5E598D /* TimeProfilerVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TimeProfilerVC.h; path = YSTimeProfiler/Classes/TimeProfilerVC.h; sourceTree = "<group>"; };
+		161DED493722350A2CA42AE112D0A2F9 /* TimeProfilerVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TimeProfilerVC.m; path = YSTimeProfiler/Classes/TimeProfilerVC.m; sourceTree = "<group>"; };
+		19854EBE8F09C590EF4DD16803CA1594 /* YSTimeProfiler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YSTimeProfiler-dummy.m"; sourceTree = "<group>"; };
+		1DBE4AC576B91E2F3F5653059EB3351C /* Pods-YSTimeProfiler_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSTimeProfiler_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21ED4A84EE59FF8FF82808EE0EA42DA3 /* YSCallTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YSCallTrace.h; path = YSTimeProfiler/Classes/YSCallTrace.h; sourceTree = "<group>"; };
+		2E2C955F2F71D0B54473378999B3C8BF /* YSRecordCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YSRecordCell.m; path = YSTimeProfiler/Classes/YSRecordCell.m; sourceTree = "<group>"; };
+		358B119D840223389CB540BB6EA339A0 /* UIWindow+CallRecordShake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+CallRecordShake.h"; path = "YSTimeProfiler/Classes/UIWindow+CallRecordShake.h"; sourceTree = "<group>"; };
+		3A84A2383EEE7D9C0EE17767E3016A19 /* fishhook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.debug.xcconfig; sourceTree = "<group>"; };
+		3E36AE89CB65E6CF5316F365D32E1919 /* YSRecordHierarchyModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YSRecordHierarchyModel.h; path = YSTimeProfiler/Classes/YSRecordHierarchyModel.h; sourceTree = "<group>"; };
+		44BED1CBB2FF0B8FEF30EA15F7F5F8DA /* Pods-YSTimeProfiler_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSTimeProfiler_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4559D0094EC449446B62DA969E30CE5E /* ResourceBundle-YSTimeProfiler-YSTimeProfiler-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YSTimeProfiler-YSTimeProfiler-Info.plist"; sourceTree = "<group>"; };
+		471645E65D71B9B2486408CA95E8DF09 /* fishhook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fishhook-dummy.m"; sourceTree = "<group>"; };
+		4D51B97617232A9D6861EFA3B4880F1E /* YSTimeProfiler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSTimeProfiler.debug.xcconfig; sourceTree = "<group>"; };
+		60ADF17E90AE2BF483846C5F41F058B3 /* Pods-YSTimeProfiler_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSTimeProfiler_Tests-dummy.m"; sourceTree = "<group>"; };
+		638E10347CC1B0B53EC541A983D3451A /* libYSTimeProfiler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYSTimeProfiler.a; path = libYSTimeProfiler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D83F6256B6FCD7BFD889304E7B90DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8ACED49A7448B5AF071F41D4CA8EB5C6 /* Pods-YSTimeProfiler_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSTimeProfiler_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E3960D7784C7E52086C3E25D50D0BAD /* YSRecordModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YSRecordModel.m; path = YSTimeProfiler/Classes/YSRecordModel.m; sourceTree = "<group>"; };
+		928C48E0388E64E5C73C6956D9FD9B67 /* Pods-YSTimeProfiler_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSTimeProfiler_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9622DFCAA11CDDC330ED18D9E13DF9EF /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		98C4B1CC21E7A2C4789C7BF1EDBBAD62 /* YSTimeProfiler.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YSTimeProfiler.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CA216629A7529B075F3AC826470B254 /* libfishhook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libfishhook.a; path = libfishhook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A026BC95A40CBFEF2084D0289C46F571 /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fishhook.c; sourceTree = "<group>"; };
+		BB91CCB791E798C72238245C691BB3B6 /* Pods-YSTimeProfiler_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSTimeProfiler_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD9F7A727DC554587C9103F95302C76 /* YSTimeProfiler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSTimeProfiler.release.xcconfig; sourceTree = "<group>"; };
+		C33214A4CA34F0C0FABEC91F1742EA02 /* YSNOExpandIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = YSNOExpandIcon.png; path = YSTimeProfiler/Assets/YSNOExpandIcon.png; sourceTree = "<group>"; };
+		C4FF071C99BD2D4CF310EABF0B36371C /* Pods-YSTimeProfiler_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSTimeProfiler_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8C1F5FB963593975D0FE7BABD886602 /* fishhook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-prefix.pch"; sourceTree = "<group>"; };
+		C9CAFC0ECF0DD9D4413299CBEF58EA76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CF1C081FF2AD9E60350B1512450241C9 /* YSRecordModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YSRecordModel.h; path = YSTimeProfiler/Classes/YSRecordModel.h; sourceTree = "<group>"; };
+		D1E9EB0D9554D25BAACA1A898FD60E1C /* Pods-YSTimeProfiler_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSTimeProfiler_Example-dummy.m"; sourceTree = "<group>"; };
+		D3C158B05D9F67F3F89E99BBABCDB8A8 /* YSExpandIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = YSExpandIcon.png; path = YSTimeProfiler/Assets/YSExpandIcon.png; sourceTree = "<group>"; };
+		D568E72D7B1860C7CCE4AF0E9457BFAB /* Pods-YSTimeProfiler_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YSTimeProfiler_Example-resources.sh"; sourceTree = "<group>"; };
+		D6FD7A26A0559F5B78EE71F080696015 /* UIWindow+CallRecordShake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+CallRecordShake.m"; path = "YSTimeProfiler/Classes/UIWindow+CallRecordShake.m"; sourceTree = "<group>"; };
+		DA07B72B7C55B01FA251129ADE3039AE /* YSRecordCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YSRecordCell.h; path = YSTimeProfiler/Classes/YSRecordCell.h; sourceTree = "<group>"; };
+		DB1272BD3E55495CE94E50C54EFA64C8 /* YSTimeProfiler.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YSTimeProfiler.bundle; path = "YSTimeProfiler-YSTimeProfiler.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF5D00D33AD10E19275523D182728BF /* YSRecordHierarchyModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YSRecordHierarchyModel.m; path = YSTimeProfiler/Classes/YSRecordHierarchyModel.m; sourceTree = "<group>"; };
+		E0A925B505DE54865F9D0DD3B2C7F383 /* Pods-YSTimeProfiler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSTimeProfiler_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E8524CC45C52BF513A8D1762CAD9EFA0 /* Pods-YSTimeProfiler_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSTimeProfiler_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2D16A16FBD710066FBE043E5E628A6 /* fishhook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.release.xcconfig; sourceTree = "<group>"; };
+		F1408F713C89CE5C41615B8DEC6847A1 /* libPods-YSTimeProfiler_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YSTimeProfiler_Example.a"; path = "libPods-YSTimeProfiler_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3F60586C30536167DA7F29062DCCE7 /* YSCallTrace.c */ = {isa = PBXFileReference; includeInIndex = 1; name = YSCallTrace.c; path = YSTimeProfiler/Classes/YSCallTrace.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1600E31126DBBE0959BC637E382DFAC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28A071497E4B952CE346C86BC7C6C1A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D868A1B9D92CC19D6D5431119725096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04FE109537CD390B17BC05819AB107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E1196348332353D847FCEB1E2627AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DCD3E679CA9C0693E674C0A4A6A8F87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3101401B4CFB9B6D9A04200323BEF3A7 /* fishhook */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3101401B4CFB9B6D9A04200323BEF3A7 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				A026BC95A40CBFEF2084D0289C46F571 /* fishhook.c */,
+				9622DFCAA11CDDC330ED18D9E13DF9EF /* fishhook.h */,
+				C3D6EE59CEDE644E10677EB7EEFC488C /* Support Files */,
+			);
+			name = fishhook;
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		807DE0E49DA035A63A27455F8690E01C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C9CAFC0ECF0DD9D4413299CBEF58EA76 /* LICENSE */,
+				73D83F6256B6FCD7BFD889304E7B90DA /* README.md */,
+				98C4B1CC21E7A2C4789C7BF1EDBBAD62 /* YSTimeProfiler.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A21BF57B8EED59591E7824E7801767C8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16F5C7D428762F5DCC41E3EA4BCD9A4 /* YSTimeProfiler */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BDCD3D57EFD660C62CA9CBAADB30F1AA /* Pods-YSTimeProfiler_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE4AC576B91E2F3F5653059EB3351C /* Pods-YSTimeProfiler_Example-acknowledgements.markdown */,
+				8ACED49A7448B5AF071F41D4CA8EB5C6 /* Pods-YSTimeProfiler_Example-acknowledgements.plist */,
+				D1E9EB0D9554D25BAACA1A898FD60E1C /* Pods-YSTimeProfiler_Example-dummy.m */,
+				D568E72D7B1860C7CCE4AF0E9457BFAB /* Pods-YSTimeProfiler_Example-resources.sh */,
+				E8524CC45C52BF513A8D1762CAD9EFA0 /* Pods-YSTimeProfiler_Example.debug.xcconfig */,
+				928C48E0388E64E5C73C6956D9FD9B67 /* Pods-YSTimeProfiler_Example.release.xcconfig */,
+			);
+			name = "Pods-YSTimeProfiler_Example";
+			path = "Target Support Files/Pods-YSTimeProfiler_Example";
+			sourceTree = "<group>";
+		};
+		C3D6EE59CEDE644E10677EB7EEFC488C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				471645E65D71B9B2486408CA95E8DF09 /* fishhook-dummy.m */,
+				C8C1F5FB963593975D0FE7BABD886602 /* fishhook-prefix.pch */,
+				3A84A2383EEE7D9C0EE17767E3016A19 /* fishhook.debug.xcconfig */,
+				ED2D16A16FBD710066FBE043E5E628A6 /* fishhook.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fishhook";
+			sourceTree = "<group>";
+		};
+		CA32B28B5358A444448613E92E911FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA216629A7529B075F3AC826470B254 /* libfishhook.a */,
+				F1408F713C89CE5C41615B8DEC6847A1 /* libPods-YSTimeProfiler_Example.a */,
+				09CAECAA943FD4A206AEE0E0C157F245 /* libPods-YSTimeProfiler_Tests.a */,
+				638E10347CC1B0B53EC541A983D3451A /* libYSTimeProfiler.a */,
+				DB1272BD3E55495CE94E50C54EFA64C8 /* YSTimeProfiler.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC64843941A5F7587EC64DF8A5646DFC /* Pods-YSTimeProfiler_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44BED1CBB2FF0B8FEF30EA15F7F5F8DA /* Pods-YSTimeProfiler_Tests-acknowledgements.markdown */,
+				C4FF071C99BD2D4CF310EABF0B36371C /* Pods-YSTimeProfiler_Tests-acknowledgements.plist */,
+				60ADF17E90AE2BF483846C5F41F058B3 /* Pods-YSTimeProfiler_Tests-dummy.m */,
+				BB91CCB791E798C72238245C691BB3B6 /* Pods-YSTimeProfiler_Tests.debug.xcconfig */,
+				E0A925B505DE54865F9D0DD3B2C7F383 /* Pods-YSTimeProfiler_Tests.release.xcconfig */,
+			);
+			name = "Pods-YSTimeProfiler_Tests";
+			path = "Target Support Files/Pods-YSTimeProfiler_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A21BF57B8EED59591E7824E7801767C8 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				2DCD3E679CA9C0693E674C0A4A6A8F87 /* Pods */,
+				CA32B28B5358A444448613E92E911FDD /* Products */,
+				F7458D3D7B873E7CD29C0D79B8FA5B1F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D16F5C7D428762F5DCC41E3EA4BCD9A4 /* YSTimeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+				0F6C6869EE21298F0A070D966F5E598D /* TimeProfilerVC.h */,
+				161DED493722350A2CA42AE112D0A2F9 /* TimeProfilerVC.m */,
+				358B119D840223389CB540BB6EA339A0 /* UIWindow+CallRecordShake.h */,
+				D6FD7A26A0559F5B78EE71F080696015 /* UIWindow+CallRecordShake.m */,
+				FA3F60586C30536167DA7F29062DCCE7 /* YSCallTrace.c */,
+				21ED4A84EE59FF8FF82808EE0EA42DA3 /* YSCallTrace.h */,
+				D3C158B05D9F67F3F89E99BBABCDB8A8 /* YSExpandIcon.png */,
+				C33214A4CA34F0C0FABEC91F1742EA02 /* YSNOExpandIcon.png */,
+				DA07B72B7C55B01FA251129ADE3039AE /* YSRecordCell.h */,
+				2E2C955F2F71D0B54473378999B3C8BF /* YSRecordCell.m */,
+				3E36AE89CB65E6CF5316F365D32E1919 /* YSRecordHierarchyModel.h */,
+				DFF5D00D33AD10E19275523D182728BF /* YSRecordHierarchyModel.m */,
+				CF1C081FF2AD9E60350B1512450241C9 /* YSRecordModel.h */,
+				8E3960D7784C7E52086C3E25D50D0BAD /* YSRecordModel.m */,
+				807DE0E49DA035A63A27455F8690E01C /* Pod */,
+				E48845063F4FC27C21C646D512ACC477 /* Support Files */,
+			);
+			name = YSTimeProfiler;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48845063F4FC27C21C646D512ACC477 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4559D0094EC449446B62DA969E30CE5E /* ResourceBundle-YSTimeProfiler-YSTimeProfiler-Info.plist */,
+				19854EBE8F09C590EF4DD16803CA1594 /* YSTimeProfiler-dummy.m */,
+				099EE5F95D40C831EDDB07A5D2EEED51 /* YSTimeProfiler-prefix.pch */,
+				4D51B97617232A9D6861EFA3B4880F1E /* YSTimeProfiler.debug.xcconfig */,
+				BDD9F7A727DC554587C9103F95302C76 /* YSTimeProfiler.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YSTimeProfiler";
+			sourceTree = "<group>";
+		};
+		F7458D3D7B873E7CD29C0D79B8FA5B1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDCD3D57EFD660C62CA9CBAADB30F1AA /* Pods-YSTimeProfiler_Example */,
+				CC64843941A5F7587EC64DF8A5646DFC /* Pods-YSTimeProfiler_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35126369E2A8BE57C9A285036361674A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7012BF9ACAC57D786AACB51E94ACEA75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777A149FCFC0178F94DC7F3DCE0EBF68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAC52A66BAA2B733B798D1C41EB28DF /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B227A5BE309EE3A70FCEEE8B7AD928CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1C830943360D40B6362188CF2A437E /* TimeProfilerVC.h in Headers */,
+				F210D64072CFBEAF0DF9A2981741849F /* UIWindow+CallRecordShake.h in Headers */,
+				069E8B5777FFCB6BB8DBCBA6D383DA0F /* YSCallTrace.h in Headers */,
+				3A3E07F66CF82FA8CFE412BD03FAF17A /* YSRecordCell.h in Headers */,
+				8A9B2A1CFA8B0F9353381132CB114F15 /* YSRecordHierarchyModel.h in Headers */,
+				5C2D126ABDAF9AED4457FF96E17CE94B /* YSRecordModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42E2DF50D43FD042C8D0CE4FEDBF55F3 /* YSTimeProfiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59974C794AE3A2B3D1DA7CA8E4C875F0 /* Build configuration list for PBXNativeTarget "YSTimeProfiler" */;
+			buildPhases = (
+				B227A5BE309EE3A70FCEEE8B7AD928CE /* Headers */,
+				2B14B018CD5161C2BD4F1921683EF6AA /* Sources */,
+				1600E31126DBBE0959BC637E382DFAC3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6270A78697D0508B5BE97DB4A28D626D /* PBXTargetDependency */,
+				F78F93A689B528B69C1200E76481A6D2 /* PBXTargetDependency */,
+			);
+			name = YSTimeProfiler;
+			productName = YSTimeProfiler;
+			productReference = 638E10347CC1B0B53EC541A983D3451A /* libYSTimeProfiler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		58CAF5B0291DAB42086F0645150E1791 /* fishhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AED803DB38569B6787BA2FB474922F1 /* Build configuration list for PBXNativeTarget "fishhook" */;
+			buildPhases = (
+				777A149FCFC0178F94DC7F3DCE0EBF68 /* Headers */,
+				E50408E9C2E8E24B3DDC1DCAE2E18A47 /* Sources */,
+				B0E1196348332353D847FCEB1E2627AB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishhook;
+			productName = fishhook;
+			productReference = 9CA216629A7529B075F3AC826470B254 /* libfishhook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		87F80D32F26E568F7355AC8FBE1FB07F /* YSTimeProfiler-YSTimeProfiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B3E659B460005FDF9AF82DE536A465 /* Build configuration list for PBXNativeTarget "YSTimeProfiler-YSTimeProfiler" */;
+			buildPhases = (
+				0FD1432BFB60F340D706A7A88AF0AEE0 /* Sources */,
+				B04FE109537CD390B17BC05819AB107E /* Frameworks */,
+				EDD06F9A606D234DA3AB16A7FD69E3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YSTimeProfiler-YSTimeProfiler";
+			productName = "YSTimeProfiler-YSTimeProfiler";
+			productReference = DB1272BD3E55495CE94E50C54EFA64C8 /* YSTimeProfiler.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A737BD80AAAC55B91CCEF49EF7A8FA2F /* Pods-YSTimeProfiler_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E13C8164FE217427489438DA993036 /* Build configuration list for PBXNativeTarget "Pods-YSTimeProfiler_Tests" */;
+			buildPhases = (
+				7012BF9ACAC57D786AACB51E94ACEA75 /* Headers */,
+				7158A5490F912EF565BDF937EEEE088A /* Sources */,
+				7D868A1B9D92CC19D6D5431119725096 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C6C5EBCD163F02B70FA8632A94A7B59 /* PBXTargetDependency */,
+			);
+			name = "Pods-YSTimeProfiler_Tests";
+			productName = "Pods-YSTimeProfiler_Tests";
+			productReference = 09CAECAA943FD4A206AEE0E0C157F245 /* libPods-YSTimeProfiler_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CDC05FB459892C5B214D7FC8E892BEEB /* Pods-YSTimeProfiler_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C802FFC664F6A9D6BE71E110BFC63A /* Build configuration list for PBXNativeTarget "Pods-YSTimeProfiler_Example" */;
+			buildPhases = (
+				35126369E2A8BE57C9A285036361674A /* Headers */,
+				CC7E35180F61E78048FB003DBB148FBA /* Sources */,
+				28A071497E4B952CE346C86BC7C6C1A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C9533AE56B2BC38926C95B481521C4 /* PBXTargetDependency */,
+				1A3A86840C13B0BCE0A1E90E4827C51D /* PBXTargetDependency */,
+			);
+			name = "Pods-YSTimeProfiler_Example";
+			productName = "Pods-YSTimeProfiler_Example";
+			productReference = F1408F713C89CE5C41615B8DEC6847A1 /* libPods-YSTimeProfiler_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CA32B28B5358A444448613E92E911FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58CAF5B0291DAB42086F0645150E1791 /* fishhook */,
+				CDC05FB459892C5B214D7FC8E892BEEB /* Pods-YSTimeProfiler_Example */,
+				A737BD80AAAC55B91CCEF49EF7A8FA2F /* Pods-YSTimeProfiler_Tests */,
+				42E2DF50D43FD042C8D0CE4FEDBF55F3 /* YSTimeProfiler */,
+				87F80D32F26E568F7355AC8FBE1FB07F /* YSTimeProfiler-YSTimeProfiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDD06F9A606D234DA3AB16A7FD69E3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A2EB19D8200ADF88E397D85B528614 /* YSExpandIcon.png in Resources */,
+				21C73CD56DF2F001AA7ACE1A0931C69F /* YSNOExpandIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD1432BFB60F340D706A7A88AF0AEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B14B018CD5161C2BD4F1921683EF6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0EE23AAB5838E3FBF0B51942DBA4FA8 /* TimeProfilerVC.m in Sources */,
+				73E9D2721D4F7A98D297CC41C2149508 /* UIWindow+CallRecordShake.m in Sources */,
+				1165AE73B9464A752AB0916599CFCB8A /* YSCallTrace.c in Sources */,
+				14B190CBFF8AAFDA9B7F7BCDD7FE672F /* YSRecordCell.m in Sources */,
+				B3DED084DFA209F143B9EB86AD1B3CC3 /* YSRecordHierarchyModel.m in Sources */,
+				7C322CA3B55B581E3901C3755221895C /* YSRecordModel.m in Sources */,
+				EB702513D0D64FFF7C519CB316D37D5D /* YSTimeProfiler-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7158A5490F912EF565BDF937EEEE088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C87B3271ECD7247387052F568529F880 /* Pods-YSTimeProfiler_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7E35180F61E78048FB003DBB148FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F009852162BAD6EFF4E831A7814282 /* Pods-YSTimeProfiler_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50408E9C2E8E24B3DDC1DCAE2E18A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C287D7C0148E2FE8B83947807DDDD0 /* fishhook-dummy.m in Sources */,
+				F7933E1B5FF6381612A17A510CF29966 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A3A86840C13B0BCE0A1E90E4827C51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
+			targetProxy = 44362E522DFD2D9E949FFF82F04E5D30 /* PBXContainerItemProxy */;
+		};
+		4C6C5EBCD163F02B70FA8632A94A7B59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YSTimeProfiler_Example";
+			target = CDC05FB459892C5B214D7FC8E892BEEB /* Pods-YSTimeProfiler_Example */;
+			targetProxy = A2D585185DDB154EB24DCA11067A57B4 /* PBXContainerItemProxy */;
+		};
+		6270A78697D0508B5BE97DB4A28D626D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YSTimeProfiler-YSTimeProfiler";
+			target = 87F80D32F26E568F7355AC8FBE1FB07F /* YSTimeProfiler-YSTimeProfiler */;
+			targetProxy = 9566FAA81D35052F24877D9BCBBF1540 /* PBXContainerItemProxy */;
+		};
+		C5C9533AE56B2BC38926C95B481521C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YSTimeProfiler;
+			target = 42E2DF50D43FD042C8D0CE4FEDBF55F3 /* YSTimeProfiler */;
+			targetProxy = AF1519D9598D21B20FBE357363AE4F7C /* PBXContainerItemProxy */;
+		};
+		F78F93A689B528B69C1200E76481A6D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
+			targetProxy = 1429329A01A16974F664453783E70654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		116623F20D8820FB7B482B3E00988836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB91CCB791E798C72238245C691BB3B6 /* Pods-YSTimeProfiler_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		33BD207C567BF70D476BCB258EA7863E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8524CC45C52BF513A8D1762CAD9EFA0 /* Pods-YSTimeProfiler_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EFA505C91651F2C46AAF1A5A11BBF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD9F7A727DC554587C9103F95302C76 /* YSTimeProfiler.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YSTimeProfiler";
+				IBSC_MODULE = YSTimeProfiler;
+				INFOPLIST_FILE = "Target Support Files/YSTimeProfiler/ResourceBundle-YSTimeProfiler-YSTimeProfiler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = YSTimeProfiler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5D800C5A24B72E5EB34FE3E838CB527E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2D16A16FBD710066FBE043E5E628A6 /* fishhook.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		802DAD961DABA8C7B79BC2CE653C0464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D51B97617232A9D6861EFA3B4880F1E /* YSTimeProfiler.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YSTimeProfiler/YSTimeProfiler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YSTimeProfiler;
+				PRODUCT_NAME = YSTimeProfiler;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9350D86FFD3020498ECA083E1D1996C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A84A2383EEE7D9C0EE17767E3016A19 /* fishhook.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B4838F91EAC4F00B97D622406EDD940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A925B505DE54865F9D0DD3B2C7F383 /* Pods-YSTimeProfiler_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA85737EC013B78A4F6802E4025DDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D51B97617232A9D6861EFA3B4880F1E /* YSTimeProfiler.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YSTimeProfiler";
+				IBSC_MODULE = YSTimeProfiler;
+				INFOPLIST_FILE = "Target Support Files/YSTimeProfiler/ResourceBundle-YSTimeProfiler-YSTimeProfiler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = YSTimeProfiler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CA30F554DE7D0C51E0C99663B7AD3CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD9F7A727DC554587C9103F95302C76 /* YSTimeProfiler.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YSTimeProfiler/YSTimeProfiler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YSTimeProfiler;
+				PRODUCT_NAME = YSTimeProfiler;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E608B2EF70D0E59397FC59018D87B39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928C48E0388E64E5C73C6956D9FD9B67 /* Pods-YSTimeProfiler_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E13C8164FE217427489438DA993036 /* Build configuration list for PBXNativeTarget "Pods-YSTimeProfiler_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116623F20D8820FB7B482B3E00988836 /* Debug */,
+				9B4838F91EAC4F00B97D622406EDD940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59974C794AE3A2B3D1DA7CA8E4C875F0 /* Build configuration list for PBXNativeTarget "YSTimeProfiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802DAD961DABA8C7B79BC2CE653C0464 /* Debug */,
+				CA30F554DE7D0C51E0C99663B7AD3CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AED803DB38569B6787BA2FB474922F1 /* Build configuration list for PBXNativeTarget "fishhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9350D86FFD3020498ECA083E1D1996C7 /* Debug */,
+				5D800C5A24B72E5EB34FE3E838CB527E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B3E659B460005FDF9AF82DE536A465 /* Build configuration list for PBXNativeTarget "YSTimeProfiler-YSTimeProfiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA85737EC013B78A4F6802E4025DDB5 /* Debug */,
+				3EFA505C91651F2C46AAF1A5A11BBF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C802FFC664F6A9D6BE71E110BFC63A /* Build configuration list for PBXNativeTarget "Pods-YSTimeProfiler_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33BD207C567BF70D476BCB258EA7863E /* Debug */,
+				E608B2EF70D0E59397FC59018D87B39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "YSTimeProfiler",
+  "version": "0.1.0",
+  "summary": "方法耗时检查工具",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/andyccc/YSTimeProfiler",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "andyccc": "andyccc"
+  },
+  "source": {
+    "git": "https://github.com/andyccc/YSTimeProfiler.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YSTimeProfiler/Classes/**/*",
+  "resource_bundles": {
+    "YSTimeProfiler": [
+      "YSTimeProfiler/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "fishhook": [
+
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - fishhook (0.2)
+  - YSTimeProfiler (0.1.0):
+    - fishhook
+
+DEPENDENCIES:
+  - YSTimeProfiler (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - fishhook
+
+EXTERNAL SOURCES:
+  YSTimeProfiler:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  YSTimeProfiler: ce9d684652fced1bd8499c00a5c10390c2a503b7
+
+PODFILE CHECKSUM: 872efc5a0ea7e60c0275e9b476452a193a5c942f
+
+COCOAPODS: 1.10.1

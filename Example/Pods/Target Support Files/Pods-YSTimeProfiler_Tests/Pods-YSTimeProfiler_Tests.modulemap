@@ -1,0 +1,6 @@
+framework module Pods_YSTimeProfiler_Tests {
+  umbrella header "Pods-YSTimeProfiler_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
